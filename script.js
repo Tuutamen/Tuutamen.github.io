@@ -1,55 +1,55 @@
  const cardsData = [
       {
-        img: 'images/1cross.png',
+        img: '1cross.png',
         name: 'New balance 9060',
         price: 50000,
         newPrice: 2500,
         link: '1cross.html'
       },
       {
-        img: 'images/2cross.png',
+        img: '2cross.png',
         name: 'Nike Vista Lite',
         price: 55000,
         newPrice: 3000,
         link: '#'
       },
       {
-        img: 'images/3cross.png',
+        img: '3cross.png',
         name: 'Nike Air Max 2021',
         price: 60000,
         newPrice: 6000,
         link: '#'
       },
       {
-        img: 'images/4cross.png',
+        img: '4cross.png',
         name: 'Nike Vista',
         price: 40000,
         newPrice: 8000,
         link: '#'
       },
       {
-        img: 'images/5cross.png',
+        img: '5cross.png',
         name: 'Nike Jordan',
         price: 28000,
         newPrice: 4500,
         link: '#'
       },
       {
-        img: 'images/8cross.png',
+        img: '8cross.png',
         name: 'Nike Air Force',
         price: 27000,
         newPrice: 5000,
         link: '#'
       },
       {
-        img: 'images/6cross.png',
+        img: '6cross.png',
         name: 'New Balance 530',
         price: 45000,
         newPrice: 12000,
         link: '#'
       },
       {
-        img: 'images/7cross.png',
+        img: '7cross.png',
         name: 'Nike M2K Tekno',
         price: 43000,
         newPrice: 9000,
