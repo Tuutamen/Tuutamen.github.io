@@ -1,6 +1,6 @@
  const cardsData = [
       {
-        img: 'main/1cross.png',
+        img: '1cross.png',
         name: 'New balance 9060',
         price: 50000,
         newPrice: 2500,
