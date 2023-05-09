@@ -1,0 +1,141 @@
+body {
+  background-color: #030029;
+  margin: 0;
+  position: relative;
+}
+
+/*Скроллбар*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #030029;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4B0082;
+  border-radius: 5px;
+}
+/*Скроллбар*/
+/*Заглавление*/
+
+.top-menu{
+  margin-top: 10px;
+  margin-left: 5%;
+  display: flex;
+  background-color: #4B0082;
+  height: 100px;
+  width: 90%;
+  border-radius: 0.6rem;
+  position: relative;
+  align-items: center;
+  
+}
+.top-menu ul{
+  max-width: 500px;
+  position: absolute;
+  right: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.top-menu li {
+  margin: 20px;
+
+}
+.top-menu li a{
+  color: #030029;
+  text-decoration: none;
+  font-family: Gill Sans, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+}
+li a:hover {
+  background-color: #4B0082;
+  color: #865dff;
+  border-radius: 5px;
+}
+@media screen and (max-width: 960px) {
+  .top-menu ul {
+    display: none;
+  }
+}
+.top-menu h1 {
+  font-size: 3rem;
+  margin-left: 5%;
+}
+.top-menu h1 a{
+  text-decoration: none;
+  color: #ff3dd2;
+}
+h1 a:hover{
+  background-color: #4B0082;
+  color: #865dff;
+  border-radius: 5px;
+
+}
+/*Заглавление*/
+.faq-body{
+  margin-top: 2%;
+  margin-left: 5%;
+  max-width: 90%;
+}
+
+.faq-panel{
+  padding: 7px 21px;
+  margin-bottom: 24px;
+  border: 3px solid #4B0082;
+  border-radius: 0.6rem;
+  max-height: 38px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.faq-panel[open]{
+  max-height: 1000px;
+  transition: max-height 1s ease-in;
+}
+.faq-label{
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.faq-panel-answer{
+  font-size: 1.6rem;
+  color: #865dff;
+}
+
+main h1{
+  text-align: center;
+  font-size: 3.6rem;
+  color: #865dff;
+  font-family: Gill Sans, sans-serif;
+  font-weight: bold;
+}
+
+/*Футер*/
+
+
+footer {
+  border-radius: 0.6rem;
+  background-color: #4B0082; 
+  height: 50px; 
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos{
+  max-width: 45%;
+  max-height: 45%;
+  padding: 0.9rem;
+  float: right;
+
+}
+
+/*Футер*/

@@ -1,0 +1,258 @@
+/*Скроллбар*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #030029;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4B0082;
+  border-radius: 5px;
+}
+/*Скроллбар*/
+
+body {
+  background-color: #030029;
+  margin: 0;
+}
+/*Заглавление*/
+
+.top-menu{
+  margin-top: 10px;
+  margin-left: 5%;
+  display: flex;
+  background-color: #4B0082;
+  height: 100px;
+  width: 90%;
+  border-radius: 0.6rem;
+  position: relative;
+  align-items: center;
+  
+}
+.top-menu ul{
+  max-width: 500px;
+  position: absolute;
+  right: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.top-menu li {
+  margin: 20px;
+
+}
+.top-menu li a{
+  color: #030029;
+  text-decoration: none;
+  font-family: Gill Sans, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+}
+li a:hover {
+  background-color: #4B0082;
+  color: #865dff;
+  border-radius: 5px;
+}
+@media screen and (max-width: 960px) {
+  .top-menu ul {
+    display: none;
+  }
+}
+.top-menu h1 {
+  font-size: 3rem;
+  margin-left: 5%;
+}
+.top-menu h1 a{
+  text-decoration: none;
+  color: #ff3dd2;
+}
+h1 a:hover{
+  background-color: #4B0082;
+  color: #865dff;
+  border-radius: 5px;
+
+}
+/*Заглавление*/
+
+/*Футер*/
+
+
+footer {
+  border-radius: 0.6rem;
+  background-color: #4B0082; 
+  height: 50px; 
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.logos{
+  max-width: 45%;
+  max-height: 45%;
+  padding: 0.9rem;
+  float: right;
+
+}
+
+/*Футер*/
+.card{
+  position: relative;
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  }
+.card .image .name{
+  overflow-wrap: break-word;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  color: #f8bbed;
+}
+.card .description{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.card .image{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  border: 5px solid #4B0082;
+  border-radius: 0.6rem;
+}
+.card .image img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.description #galery{
+  height: 75%;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description #galery .swiper{
+  height: 100%;
+  width: 100%;
+}
+.description #galery .swiper-slide{
+  text-align: center;
+  background: #030029;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description #galery .swiper-slide img{
+  display: block;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.description #text{
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 25%;
+  width: 100%;
+}
+
+.card .description #text .buyButton{
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+  height: 100%;
+  background: #4B0082;
+  color: #030029;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+button:hover {
+ color: black;
+}
+
+button:after {
+ content: "";
+ background: white;
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+button:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+}
+.price{
+  display: inline-block;
+  font-size: 35px;
+  font-weight: bold;
+  color: #4B0082;
+  font-family: Gill Sans, sans-serif;
+  font-weight: bold;
+}
+.size {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18%;
+  font-size: 18px;
+  height: 35%;
+  border: none;
+  outline: none;
+  border-radius: 0.625em;
+  padding: 1em;
+  background-color: #4B0082;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+.size:focus {
+  background-color: white;
+  transform: scale(1.05);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.description #galery .swiper .swiper-button-next,
+.description #galery .swiper .swiper-button-prev {
+  color: #4B0082;
+  width: 50px;
+  height: 50px;
+}
+
