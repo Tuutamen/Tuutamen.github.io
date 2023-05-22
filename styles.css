@@ -176,11 +176,11 @@ li a:hover {
 }
 .top-menu h1 {
   font-size: 3rem;
-  margin-left: 5%;
+  margin-left: 0;
 }
 .top-menu h1 a{
   text-decoration: none;
-  color: #ff3dd2;
+  color: #a40582;
 }
 h1 a:hover{
   background-color: #4B0082;
@@ -191,7 +191,7 @@ h1 a:hover{
 .top-menu .logo{
   max-width: 100%;
   max-height: 100%;
-  margin-left: 3%;
+  margin-left: 0;
 }
 /*Заглавление*/
 
